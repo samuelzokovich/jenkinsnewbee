@@ -1,4 +1,16 @@
-- name: hello
-  school: idcshcool
-- name: world
-  school: lostworld
+- paas: nld8
+  paas_url: www.something-nld8.com
+  environment: uat
+  namespace: sample
+  data_version: 1.0.0
+  charts:
+    apache_base: 1.21.0
+    sample_app: 2.1.2
+- paas: nld9
+  paas_url: www.something-nld9.com
+  environment: pdt
+  namespace: sample
+  data_version: 1.0.3
+  charts:
+    apache_base: 1.22.0
+    sample_app: 2.1.1
