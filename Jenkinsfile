@@ -5,7 +5,7 @@ pipeline {
       steps {
         script { 
           def datas = readYaml file: 'manifest.yaml'
-          echo '${datas}'
+          echo '${datas[0]}'
         }
       }
     }
