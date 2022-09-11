@@ -1,0 +1,4 @@
+- name: hello
+  school: idcshcool
+- name: world
+  school: lostworld
