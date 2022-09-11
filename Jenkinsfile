@@ -5,7 +5,9 @@ pipeline {
       steps {
         script { 
           def datas = readYaml file: 'manifest.yaml'
-          echo '${datas[0]}'
+          for (int i = 0; i < datas.size(); i++) {
+            sh "echo Hello ${datas[i]}"
+           }
         }
       }
     }
